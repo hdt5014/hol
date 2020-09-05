@@ -21,13 +21,13 @@ pipeline {
             }
         }
         stage ('build and publish image') {
-    steps {
-      script {
-      checkout scm
-      docker.WithRegistry('', 'DockerRegistryID') {
-      def customImage = docker.build("hdt5014/hol-pipeline:${env.BUILD_ID}")
-      customImage.push()
-      }
+      steps {
+        script {
+          checkout scm
+          docker.withRegistry('', 'DockerRegistryID') {
+          def customImage = docker.build("hdt5014/hol-pipeline:${env.BUILD_ID}")
+          customImage.push()
+          }
     }
 
     }
