@@ -1,9 +1,9 @@
 pipeline {
     agent any
     triggers {
-   pollSCM '* * * * *'
+  pollSCM '* * * * *'
 }
-}
+
     tools {
         maven 'M2_HOME'
     }
@@ -35,7 +35,9 @@ pipeline {
           def customImage1 = docker.build("hdt5014/hol-pipeline")
           customImage.push()
           customImage1.push()
-          }
+
+
+}
     }
 
     }
@@ -46,4 +48,4 @@ pipeline {
 }
 }
   }
-
+}
