@@ -3,10 +3,7 @@ pipeline {
     triggers {
    pollSCM '* * * * *'
 }
-<<<<<<< HEAD
 
-=======
->>>>>>> 19e6d1817c5c62785af5e96fce42532f700952be
     tools {
         maven 'M2_HOME'
     }
