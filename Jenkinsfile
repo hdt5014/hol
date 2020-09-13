@@ -42,9 +42,9 @@ pipeline {
 
     }
 }
-        stage  ( "deployment trigger"){
-          steps {
-            build 'hol-CD'
+        stage ( "deployment trigger"){
+           steps {
+             build 'hol-CD'
 }
 }
   }
