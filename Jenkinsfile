@@ -45,7 +45,7 @@ pipeline {
 }
         stage  ( "deployment trigger"){
           steps {
-            build 'hol-CI'
+            build 'hol-CD'
 }
 }
   }
