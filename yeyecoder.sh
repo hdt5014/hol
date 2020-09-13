@@ -17,4 +17,3 @@ echo "changes have been committed"
 git push
 echo "changes have been pushed"
 
-fi
